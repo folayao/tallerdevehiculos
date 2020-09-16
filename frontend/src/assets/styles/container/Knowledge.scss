@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    
+    .knowledge{
+        grid-column: 3/10
+        grid-row: ;
+        display: grid;
+
+
+
+    }
+}

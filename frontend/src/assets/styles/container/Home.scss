@@ -1,0 +1,102 @@
+@import "../vars.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  
+  .img {
+    grid-column: 6/8;
+    grid-row: 3;
+    &__foto {
+      border-radius: 150px;
+      width: 100%;
+      height: 100%;
+      box-shadow: 1px 1px 1px $palidblue;
+    }
+  }
+  
+  .buttons__container--aboutme {
+    margin-top: 25px;
+    grid-column: 3/5;
+    grid-row: 6;
+    padding: 20px;
+    font-weight: 600;
+    font-family: $font-family;
+    text-decoration: none;
+    text-align: center;
+    background-color: $blue;
+    color: $white;
+    border-radius: 35px;
+    box-shadow: 3px 3px 3px $palidblue;
+  }
+
+  .buttons__container--knowledge {
+    margin-top: 25px;
+    grid-column: 6/8;
+    grid-row: 6;
+    padding: 20px;
+    font-weight: 600;
+    font-family: $font-family;
+    text-decoration: none;
+    text-align: center;
+    background-color: $blue;
+    color: $white;
+    border-radius: 35px;
+    box-shadow: 3px 3px 3px $palidblue;
+  }
+  .buttons__container--deploys {
+    margin-top: 25px;
+    grid-column: 9/11;
+    grid-row: 6;
+    padding: 20px;
+    font-weight: 600;
+    font-family: $font-family;
+    text-decoration: none;
+    text-align: center;
+    background-color: $blue;
+    color: $white;
+    border-radius: 35px;
+    box-shadow: 3px 3px 3px $palidblue;
+  }
+  .buttons__container--aboutme:hover {
+    margin-top: 25px;
+    grid-column: 3/5;
+    grid-row: 6;
+    background-color: $hoverblue;
+  }
+  .buttons__container--knowledge:hover {
+    margin-top: 25px;
+    grid-column: 6/8;
+    grid-row: 6;
+    background-color: $hoverblue;
+
+  }
+  .buttons__container--deploys:hover {
+    margin-top: 25px;
+    grid-column:  9/11;
+    grid-row: 6;
+    background-color: $hoverblue;
+  }
+
+  .aboutme {
+    grid-column: 4/10;
+    grid-row: 8;
+
+    &__container {
+      .aboutme__container--title {
+        text-align: center;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 35px;
+      }
+      .aboutme__container--textme {
+        font-family: $font-family;
+        font-weight: 300;
+        font-size: 25px;
+        text-align: justify;
+      }
+    }
+  }
+
+}

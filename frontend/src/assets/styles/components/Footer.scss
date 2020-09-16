@@ -1,0 +1,22 @@
+@import '../vars.scss';
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    
+    .footer{
+        grid-column: 6/8;
+        grid-row: 4;
+        text-align: center;
+        margin-bottom: 20px;
+        &__container{
+            .footer__container--text{
+                font-family: $font-family;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
+}
